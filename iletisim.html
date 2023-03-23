@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- İCON LİNKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <title>İstanbul Kent Üniversitesi</title>
+</head>
+
+<body>
+    <section class="ilet-header">
+        <!-- NAVBAR -->
+        <nav>
+            <a href="index.html"> <img src="/jpg/logo - Düzenlendi (1).png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-square-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="hakkımızda.html">HAKKIMIZDA</a></li>
+                    <li><a href="akademik.html">AKADEMİK</a></li>
+                    <li><a href="info.html">BİLGİ AL</a></li>
+                    <li><a href="iletisim.html">İLETİŞİM</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>İLETİŞİM BİLGİLERİMİZ</h1>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24077.010036773387!2d28.966656639615003!3d41.03343205396009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab76397919f29%3A0x13d17ef4ccf35582!2sKent%20%C3%9Cniversitesi%20Taksim%20Kamp%C3%BCs%C3%BC!5e0!3m2!1str!2str!4v1679124120939!5m2!1str!2str"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-home"></i>
+                    <span>
+                        <h5>Cihangir Mahallesi, Sıraselviler Caddesi, No:71, 34433 </h5>
+                            <p>Beyoğlu İSTANBUL</p>
+                    </span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+90 0212 610 10 10</h5>
+                            <p>Cumartesi-Pazar KAPALI</p>
+                            <p>Hafta İçi 8:30-17:30</p>
+                 </span>
+            </div>
+
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5> info@kent.edu.tr</h5>
+                            <p>Daha hızlı yanıtlar için,telefonu tercih edebilirsiniz.</p>
+                    </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="İsminizi girin" required>
+                <input type="email" placeholder="E-postanızı girin" required>
+                <input type="text" placeholder="Konu Başlığı" required>
+                <textarea rows="8" placeholder="Mesajınız" required></textarea>
+                <button type="submit" class="hero-btn red-btn">GÖNDER</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!--FOOTER-->
+    <section class="footer">
+        <h4>© İstanbul Kent Üniversitesi. <br>
+            İstanbul, Türkiye.</h4>
+        <div class="icon">
+            <a href="https://www.facebook.com/istanbulkentedu" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/istanbulkentedu" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/istanbulkentedu/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/istanbulkentedu/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <h4>TÜM HAKLARI SAKLIDIR</h4>
+        <p>Made with <i class="fa-solid fa-graduation-cap"></i>Dzhan Rashev Severinov</p>
+    </section>
+
+
+    <!-- ========================== JS for TOGGLE MENU -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
